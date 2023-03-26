@@ -5,7 +5,7 @@
 % Set {innerside margin / outerside margin / topmargin / bottom margin}  and
 % other page dimensions
 \ifsetCustomMargin
-  \RequirePackage[left=37mm,right=30mm,top=35mm,bottom=30mm]{geometry}
+  \RequirePackage[left=30mm,right=20mm,top=20mm,bottom=20mm,includehead,includefoot]{geometry}
   \setFancyHdr % To apply fancy header after geometry package is loaded
 \fi
 
@@ -142,6 +142,23 @@
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 
+% ****************************** Chapter Titles ********************************
+
+% Newcastle University:
+% - Chapter headings should be in Title case, centre of the page, bold 14-point font, preceded by "Chapter" and the appropriate number.
+
+% "\large" should equate to 14pt when the standard font size is 12pt
+\usepackage{titlesec}
+\titleformat{\chapter}{\centering\large\bfseries}{Chapter \thechapter. }{0pt}{}
+
+% ***************************** Section Headings *******************************
+
+% Newcastle University:
+% - Section headings should be in Title case, bold 12-point font, left-aligned.
+% - Sub-section headings should be italicised, bold 12-point font, left-aligned.
+
+\titleformat{\section}{\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\fontsize{12}{15}\bfseries}{\textit{\thesubsection}}{1em}{\textit}
 
 % ******************************* Nomenclature *********************************
 

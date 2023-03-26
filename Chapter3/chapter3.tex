@@ -80,7 +80,6 @@ A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\tex
 
 
 \begin{table}
-\caption{A badly formatted table}
 \centering
 \label{table:bad_table}
 \begin{tabular}{|l|c|c|c|c|}
@@ -102,10 +101,10 @@ CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
 CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
 \hline 
 \end{tabular}
+\caption{A badly formatted table}
 \end{table}
 
 \begin{table}
-\caption{A nice looking table}
 \centering
 \label{table:nice_table}
 \begin{tabular}{l c c c c}
@@ -127,11 +126,11 @@ CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
 CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
 \hline 
 \end{tabular}
+\caption{A nice looking table}
 \end{table}
 
 
 \begin{table}
-\caption{Even better looking table using booktabs}
 \centering
 \label{table:good_table}
 \begin{tabular}{l c c c c}
@@ -153,4 +152,5 @@ CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
 CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
 \bottomrule
 \end{tabular}
+\caption{Even better looking table using booktabs}
 \end{table}

@@ -1,3 +1,73 @@
+Newcastle University PhD Thesis Template: Reloaded
+==================================================
+
+Unofficial template based on Krishna Kumar's CUED template, with changes according to the [Newcastle University Guidelines for the Submission and Format of Theses](https://www.ncl.ac.uk/media/wwwnclacuk/studentprogress/files/pgr/202122/Guideline%20for%20Submission%20and%20Format%20of%20Theses%20August%202021.pdf) (2021 version, latest as of March 2023).
+
+Some past efforts are available at the following repositories:
+
+- https://github.com/AndreGuerra123/NUTT
+- https://github.com/MattForshaw/NewcastleComputingSciencePhDTemplateLaTeX
+
+This repo aims to be a fresh attempt based on the latest upstream CUED template and the latest Newcastle University guidelines.
+
+## Guidelines checklist
+
+### Font
+
+- ✅ All text should be in a clear font such as Arial, Times New Roman, Verdana, Calibri or Trebuchet MS.
+  * *Using `times`.*
+- ✅ All text should be 12-point except for headings.
+
+### Layout
+
+- ✅ Margins should be set to mirrored, the inside margin (binding edge) should be 3cm, all other margins should be 2cm.
+  * *The `includehead` and `includefoot` commands are passed to `\geometry{}` in `preamble.tex` so that the headers/footers are also offset by the margins.*
+- ✅ Text should be in a single column and may be either left-aligned or justified.
+- ✅ One and a half spacing between lines, including appendices and references, but excluding quotations, footnotes or captions, which may be single-spaced.
+  * *The default of `\onehalfspacing` for "true 1.5 line spacing" should be correct here, see [this StackOverflow question](https://tex.stackexchange.com/questions/65849/confusion-onehalfspacing-vs-spacing-vs-word-vs-the-world).*
+
+### Pagination
+
+- ✅ Number pages consecutively throughout the thesis from the Introduction, including all pages whether textual or otherwise.
+- ✅ Page numbers should be Arabic numerals, i.e. 1, 2, 3.
+- ✅ Numbers should be located centrally at the bottom of the page.
+- ✅ Preliminary pages (e.g. Contents) should be numbered using lower case Roman numerals, i.e. i, ii, iii.
+
+### Chapter Headings and Sub Headings
+
+- ✅ Begin new chapters on a fresh page.
+- ✅ Chapter headings should be in Title case, centre of the page, bold 14-point font, preceded by "Chapter" and the appropriate number.
+  * *Custom changes to `preamble.tex` implement this and the next two rules.*
+- ✅ Section headings should be in Title case, bold 12-point font, left-aligned.
+- ✅ Sub-section headings should be italicised, bold 12-point font, left-aligned.
+- ⚠️ All headings should be consistent, providing a clear indication of changes in content and emphasis. No further section subdivisions other than those described above should be used.
+  * *This is on you - avoid the use of `\subsubsection{}`.*
+
+### Photographs, photocopies, maps etc.
+
+- ✅ Material should be scanned or provided in copyright-cleared, high quality digital format of at least 300dpi.
+
+### Figures and Tables
+
+- ✅ Number consecutively either throughout the thesis (Table 1, Figure 2) or within individual chapters (Table 1.2 , Figure 2.3), but not within sections or sub sections.
+- ✅ Refer to figures/tables within the text as table 1, figure 2, etc.
+- ✅ Numbers and captions should appear at the bottom of the table/figure.
+- ⚠️ The top of tables/figures printed sideways should align to the left of the page.
+  * *Untested.*
+
+### Footnotes and/or Endnotes
+
+- ✅ Notes can be placed at the bottom of each page (Footnotes) or at the end of the main thesis (Endnotes).
+- ✅ Wherever you refer to another source of information, you need to reference it.
+- ✅ This makes it clear if there is any work that is not your own and indicates where the information comes from.
+- ✅ You should insert a citation and expand on this in your footnote or endnote.
+
+---
+
+The original CUED template README.md content follows.
+
+---
+
 CUED PhD thesis template
 ========================
 
